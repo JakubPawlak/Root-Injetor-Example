@@ -1,0 +1,6 @@
+<h1>Counter: {{service.state().value}}</h1>
+<h2>Last change: {{service.state().lastChangeBy}}</h2>
+<button (click)="service.add('App component')">Add</button>
+
+<button routerLink="lazy">Go to lazy</button>
+<router-outlet></router-outlet>
