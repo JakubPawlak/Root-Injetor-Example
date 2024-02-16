@@ -10,13 +10,13 @@ export class SharedService {
   });
 
   constructor() {
+    console.log('SharedService created')
     effect(() => {
       console.log('new state', this.state())
     })
   }
 
   add(lastChangeCaller: string) {
-    console.log(lastChangeCaller)
     this.state.update(v => ({
       lastChangeBy: lastChangeCaller,
       value: v.value + 1

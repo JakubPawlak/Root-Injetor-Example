@@ -1,0 +1,8 @@
+<div style="background-color: green">
+  <h2>Own Scope Component</h2>
+  <h3>Counter: {{service.state().value}}</h3>
+  <h4>Last change: {{service.state().lastChangeBy}}</h4>
+
+  <button (click)="service.add('Own context component')">Lazy add</button>
+  <a routerLink="../">Go to default lazy</a>
+</div>

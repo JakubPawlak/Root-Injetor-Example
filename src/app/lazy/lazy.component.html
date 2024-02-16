@@ -1,4 +1,7 @@
 <div style="background-color: red">
-  <h2>Counter: {{service.state().value}}</h2>
+  <h2>Lazy Component</h2>
+  <h3>Counter: {{service.state().value}}</h3>
+  <h4>Last change: {{service.state().lastChangeBy}}</h4>
   <button (click)="service.add('Lazy loaded component')">Lazy add</button>
+  <a routerLink="own-scope">Go to own scope</a>
 </div>

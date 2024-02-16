@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AccessorService } from './accessor.service';
 import { SharedService } from './shared.service';
 
 @Component({
@@ -8,6 +9,6 @@ import { SharedService } from './shared.service';
 })
 export class AppComponent {
   title = 'ng-playground';
-  constructor(public service: SharedService) {
+  constructor(public service: SharedService, accessorService: AccessorService) {
   }
 }
